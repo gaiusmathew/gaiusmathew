@@ -2,7 +2,7 @@
 
 <h3>
     
-```python
+```nodejs
 ​
 from dataclasses import dataclass
 from typing import Tuple
