@@ -1,16 +1,29 @@
-### Hi there 👋
+<!-- Zero width character is used to put extra blank lines before and after code -->
 
-<!--
-**gaiusmathew/gaiusmathew** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h3>
+    
+```python
+​
+from dataclasses import dataclass
+from typing import Tuple
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Meta(type):
+    def __new__(cls, name, bases, attrs):
+        for attr in attrs:
+            if not attr.startswith("_"):
+                __annotations__[attr] = Tuple[str, ...]
+        attrs["__annotations__"] = __annotations__
+        new_cls = super().__new__(cls, name, bases, attrs)
+        new_cls = dataclass(new_cls)
+        return new_cls
+
+
+class Stack(metaclass=Meta):
+    languages   = ("Python", "Go", "Bash")
+    databases   = ("PostgreSQL", "Mongo", "Redis")
+    misc        = ("Docker", "Celery")
+    ongoing     = ("Django", "GraphQL")
+​
+```
+</h3>
