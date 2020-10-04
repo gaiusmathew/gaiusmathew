@@ -6,9 +6,10 @@
 ​
 from dataclasses import dataclass
 from typing import Tuple
+from dev import full-stack-developer
 
 
-class Meta(type):
+class FullStack(type):
     def __new__(cls, name, bases, attrs):
         for attr in attrs:
             if not attr.startswith("_"):
@@ -19,7 +20,7 @@ class Meta(type):
         return new_cls
 
 
-class Stack(metaclass=Meta):
+class Stack(metaclass=FullStack):
     languages   = ("NodeJs", "Python", "Php")
     frontend    = ("Angular", "Vue", "React")
     frameworks  = ("Express", "Loopback", "NestJs")
