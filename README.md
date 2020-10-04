@@ -2,7 +2,7 @@
 
 <h3>
     
-```nodejs
+```python
 ​
 from dataclasses import dataclass
 from typing import Tuple
@@ -20,10 +20,13 @@ class Meta(type):
 
 
 class Stack(metaclass=Meta):
-    languages   = ("Python", "Go", "Bash")
+    languages   = ("NodeJs", "Python", "Php")
+    frontend    = ("Angular", "Vue", "React")
+    frameworks  = ("Express", "Loopback", "NestJs")
     databases   = ("PostgreSQL", "Mongo", "Redis")
     misc        = ("Docker", "Celery")
     ongoing     = ("Django", "GraphQL")
+    
 ​
 ```
 </h3>
