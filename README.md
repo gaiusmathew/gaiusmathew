@@ -6,7 +6,7 @@
 ​
 from dataclasses import dataclass
 from typing import Tuple
-from dev import full-stack-developer
+from developer import full-stack-developer
 
 
 class FullStack(type):
@@ -25,8 +25,8 @@ class Stack(metaclass=FullStack):
     frontend    = ("Angular", "Vue", "React")
     frameworks  = ("Express", "Loopback", "NestJs")
     databases   = ("PostgreSQL", "Mongo", "Redis")
-    misc        = ("Docker", "Celery")
-    ongoing     = ("Django", "GraphQL")
+    misc        = ("Docker", "AWS")
+    ongoing     = ("PostgreSQL", "GraphQL", "Vendure")
     
 ​
 ```
