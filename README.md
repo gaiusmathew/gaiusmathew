@@ -1,5 +1,6 @@
 <!-- Zero width character is used to put extra blank lines before and after code -->
-![alt text](https://github.com/gaiusmathew/gaiusmathew/blob/main/gaiusmathew-logo.gif)
+![Gaius Mathew Logo](https://github.com/gaiusmathew/gaiusmathew/blob/main/dark.svg#gh-dark-mode-only)
+![Gaius Mathew Logo](https://github.com/gaiusmathew/gaiusmathew/blob/main/light.svg#gh-light-mode-only)
 
 <h3>
     
