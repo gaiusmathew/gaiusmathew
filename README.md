@@ -10,12 +10,12 @@ from developer import full-stack-developer
 
 
 class Stack(metaclass=FullStack):
-    languages   = ("NodeJs", "Python", "Php")
-    frontend    = ("Angular", "Vue", "React")
+    languages   = ("NodeJs", "Python")
+    frontend    = ("Angular", "React", "Vue")
     frameworks  = ("Express", "Loopback", "NestJs")
-    databases   = ("PostgreSQL", "Mongo", "Redis")
+    databases   = ("PostgreSQL", "Mongo", "MySQL")
     misc        = ("Docker", "AWS")
-    ongoing     = ("PostgreSQL", "GraphQL", "Vendure")
+    ongoing     = ("MongoDB", "GraphQL", "Typescript")
     
 ```
 </h3>
